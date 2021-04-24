@@ -38,6 +38,9 @@ img {
 .nav-link {
     font-weight: bold;
 }
+.nav-link:hover {
+    background-color: green;
+}
 /* Footer*/
 .footer {
     background: #132b4f;
@@ -172,4 +175,8 @@ img {
 #foto-career-job {
     display: block;
     margin: auto;
+}
+/*admin */
+.navigation {
+    background-color: white;
 }
