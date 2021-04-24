@@ -25,3 +25,4 @@ Route::get('blog/event', [BlogController::class,'event']);
 Route::get('blog/article', [BlogController::class,'article']);
 Route::get('/career', [CareerController::class,'career']);
 Route::get('/contact-us', [ContactUsController::class,'contactus']);
+
