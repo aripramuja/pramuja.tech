@@ -7,6 +7,9 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\CareerController;
 use App\Http\Controllers\ContactUsController;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\PostingController;
+use App\Http\Controllers\RecruitmentController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -25,4 +28,6 @@ Route::get('blog/event', [BlogController::class,'event']);
 Route::get('blog/article', [BlogController::class,'article']);
 Route::get('/career', [CareerController::class,'career']);
 Route::get('/contact-us', [ContactUsController::class,'contactus']);
-
+Route::get('/admin/dashboard', [DashboardController::class,'dashboard']);
+Route::get('/admin/posting', [PostingController::class,'posting']);
+Route::get('/admin/recruitment', [RecruitmentController::class,'recruitment']);

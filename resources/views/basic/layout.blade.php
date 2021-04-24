@@ -17,35 +17,43 @@
   <div class="header">
     Welcome to pramuja official site. Enterprise Website Development
   </div>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navigation">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="{{ url('/')}}">
         <img src="{{ asset('images/pramuja.png') }}" alt=""  class="d-inline-block align-top">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link" aria-current="page" href="{{ url('/home')}}">Home</a>
-          <a class="nav-link" href="{{ url('/profile')}}">Profile</a>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Blog</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="{{ url('blog/event')}}">Event</a></li>
-              <li><a class="dropdown-item" href="{{ url('blog/article')}}">Article</a></li>
-            </ul>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="{{ url('/home')}}">Home</a>
           </li>
-          <a class="nav-link" href="{{ url('/career')}}">Career</a>
-          <a class="nav-link" href="{{ url('/contact-us')}}">Contact Us</a>
-        </div>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url('/profile')}}">Profile</a>
+          </li>
+          <li class="nav-item">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Blog</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="{{ url('blog/event')}}">Event</a></li>
+                <li><a class="dropdown-item" href="{{ url('blog/article')}}">Article</a></li>
+              </ul>
+            </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url('/career')}}">Career</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url('/contact-us')}}">Contact Us</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
       </div>
-      <!--  
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-      -->
     </div>
   </nav>
 
