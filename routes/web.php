@@ -5,6 +5,8 @@ use App\Http\Controllers\WelcomeController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\CareerController;
+use App\Http\Controllers\ContactUsController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,3 +24,5 @@ Route::get('/profile', [ProfileController::class,'profile']);
 Route::get('blog/event', [BlogController::class,'event']);
 Route::get('blog/article', [BlogController::class,'article']);
 Route::get('/career', [CareerController::class,'career']);
+Route::get('/contact-us', [ContactUsController::class,'contactus']);
+
