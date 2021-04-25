@@ -28,6 +28,11 @@ Route::get('blog/event', [BlogController::class,'event']);
 Route::get('blog/article', [BlogController::class,'article']);
 Route::get('/career', [CareerController::class,'career']);
 Route::get('/contact-us', [ContactUsController::class,'contactus']);
+
+
 Route::get('/admin/dashboard', [DashboardController::class,'dashboard']);
 Route::get('/admin/posting', [PostingController::class,'posting']);
 Route::get('/admin/recruitment', [RecruitmentController::class,'recruitment']);
+Route::get('/career/network-engineer', [CareerController::class,'careernetworkEngineer']);
+Route::post('/career/network-engineer', [RecruitmentController::class, 'store']);
+Route::get('/admin/recruitment/applicant', [App\Http\Controllers\RecruitmentController::class, 'show']);
