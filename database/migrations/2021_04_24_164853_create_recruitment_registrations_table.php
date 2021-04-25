@@ -14,7 +14,13 @@ class CreateRecruitmentRegistrationsTable extends Migration
     public function up()
     {
         Schema::create('recruitment_registrations', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id');
+            $table->string('name');
+            $table->string('email')->unique();
+            $table->string('handphone');
+            $table->string('position');
+            $table->string('clasification');
+            $table->string('personal');
             $table->timestamps();
         });
     }

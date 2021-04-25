@@ -10,4 +10,8 @@ class CareerController extends Controller
     {
         return view('interface/career');
     }
+    public function careerNetworkEngineer()
+    {
+        return view('recruitment/network-engineer');
+    }
 }
