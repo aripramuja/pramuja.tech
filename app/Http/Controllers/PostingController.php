@@ -10,4 +10,12 @@ class PostingController extends Controller
     {
         return view('administrator/posting');
     }
+    public function postarticle()
+    {
+        return view('administrator/post-article');
+    }
+    public function postevent()
+    {
+        return view('administrator/post-event');
+    }
 }

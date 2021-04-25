@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="csrf-token" content="{{ csrf_token() }}">
   <link rel="stylesheet" href="{{ asset('/css/style.css') }}">
+  <script src="https://cdn.ckeditor.com/ckeditor5/27.0.0/classic/ckeditor.js"></script>
   <script type="text/javascript" src="{{ asset('/js/style.js') }}"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -29,8 +30,8 @@
                     <a href="#" class="d-block">Alexander Pierce</a>
                     </div>
                 </div>
-                <form class="d-flex">
-                    <input class="form-control me-2 mb-2" type="search" placeholder="Search" aria-label="Search">
+                <form class="d-flex mb-2">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
                 <a class="nav-link text-white" href="{{ url('/admin/dashboard')}}"><i class="fas fa-tachometer-alt me-2"></i>Dashboard</a>
@@ -69,6 +70,15 @@
             
         </div>
     </div>
-    
+
+<script>
+  $(function () {
+    // Replace the <textarea id="editor1"> with a CKEditor
+    // instance, using default configuration.
+    CKEDITOR.replace('editor1')
+    //bootstrap WYSIHTML5 - text editor
+    $('.textarea').wysihtml5()
+  })
+</script>    
 </body>
 </html>
