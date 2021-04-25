@@ -36,3 +36,5 @@ Route::get('/admin/recruitment', [RecruitmentController::class,'recruitment']);
 Route::get('/career/network-engineer', [CareerController::class,'careernetworkEngineer']);
 Route::post('/career/network-engineer', [RecruitmentController::class, 'store']);
 Route::get('/admin/recruitment/applicant', [App\Http\Controllers\RecruitmentController::class, 'show']);
+Route::get('/admin/posting/article', [PostingController::class,'postarticle']);
+Route::get('/admin/posting/event', [PostingController::class,'postevent']);
