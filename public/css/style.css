@@ -85,24 +85,8 @@ img {
 .more-about-us {
     width: 100%;
     min-height: 1050px;
-    clear: both;
     background: white;
     box-shadow: inset 1px 9px 15px -9px rgba(0, 0, 0, 0.6);
-}
-#history {
-    width: 38%;
-    float: left;
-    padding: 10px;
-    margin: 20px;
-    border: grey;
-}
-#more-about {
-    float: right;
-    width: 56%;
-    padding: 10px;
-    margin: 20px;
-    border: 5px;
-    min-height: 1000px;
 }
 
 /* interest in*/
@@ -175,16 +159,4 @@ img {
 #foto-career-job {
     display: block;
     margin: auto;
-}
-/*admin */
-.navigation {
-    background-color: white;
-}
-.card-body-icon {
-    position: absolute;
-    z-index: 0;
-    top: 25px;
-    right: 4px;
-    opacity: 0.4;
-    font-size: 90px;
 }
