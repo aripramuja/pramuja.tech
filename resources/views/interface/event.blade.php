@@ -7,8 +7,8 @@
         <h5>Events</h5>     
         <p>Let's see what other's say about pramuja Website Enterprise Development!</p>  
     </div>
-    <div class="events-container">
-        <div id="events">
+    <div class="row g-0">
+        <div class="col-md-7 ms-4">
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
                     <div class="card h-100">
@@ -73,7 +73,7 @@
             </nav>
         
         </div>
-        <div id="populers-post">
+        <div class="col-md-4 ms-5 ">
             <h1>Populer Post</h1>
         </div>
     </div>

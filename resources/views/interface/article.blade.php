@@ -4,11 +4,11 @@
 
 @section('container')
     <div class="events">
-        <h5>Articles</h5>     
+        <h5>Events</h5>     
         <p>Let's see what other's say about pramuja Website Enterprise Development!</p>  
     </div>
-    <div class="events-container">
-        <div id="events">
+    <div class="row g-0">
+        <div class="col-md-7 ms-4">
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
                     <div class="card h-100">
@@ -39,7 +39,7 @@
                     </div>
                 </div>
                 <div class="col">
-                <div class="card h-100">
+                    <div class="card h-100">
                         <img src="{{ asset('images/Data Arranging_Monochromatic.png') }}" class="card-img-top" alt="...">
                         <div class="card-body">
                             <small class="text-muted">Last updated 3 mins ago</small>
@@ -73,7 +73,7 @@
             </nav>
         
         </div>
-        <div id="populers-post">
+        <div class="col-md-4 ms-5 ">
             <h1>Populer Post</h1>
         </div>
     </div>

@@ -29,7 +29,7 @@ Route::get('blog/article', [BlogController::class,'article']);
 Route::get('/career', [CareerController::class,'career']);
 Route::get('/contact-us', [ContactUsController::class,'contactus']);
 
-
+Auth::routes();
 Route::get('/admin/dashboard', [DashboardController::class,'dashboard']);
 Route::get('/admin/posting', [PostingController::class,'posting']);
 Route::get('/admin/recruitment', [RecruitmentController::class,'recruitment']);

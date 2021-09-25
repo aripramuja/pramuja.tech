@@ -7,13 +7,13 @@
         <h5>Network Engineer</h5>     
         <p>Let's see what other's say about pramuja Website Enterprise Development!</p>  
     </div>
-    <div class="events-container">
-        <div id="events">
+    <div class="row g-0">
+        <div class="col-md-7 ms-4">
             <p> Ari Pramuja | 29 Februari 2020</p>
             <div class="row row-cols-1 row-cols-md-3 g-4 " >
-                <div class="col" id="foto-career-job">
+                <div class="col mx-auto">
                     <div class="card h-100">
-                    <img src="{{ asset('images/Data Arranging_Monochromatic.png') }}" alt="...">
+                        <img src="{{ asset('images/Data Arranging_Monochromatic.png') }}" alt="...">
                     </div>
                 </div>
             </div>
@@ -41,7 +41,7 @@
             <p>Tulis Kode Lowongan Yang Diinginkan Di Subjek Email Lamaran Yang Akan Dikirim. Lampirkan Surat Lamaran, Curriculum Vitae Terbaru, Fotocopy KTP Dan Pas Foto Terbaru Dan Dikirim Ke Email : rekrutmen@pramuja.com atau Submit Melalui Form Rekrutmen</p>
 
         </div>
-        <div id="populers-post">
+        <div class="col-md-4 ms-5">
             <div class="apply-now">
                 <h5 style="text-align:center">APPLY NOW</h5>
                 <p style="text-align:center"> <i>E-Recrutment Form </i> </p>
